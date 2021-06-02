@@ -1,0 +1,380 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navigacio {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: bisque;
+}
+
+footer {
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    background-color: #2a2a2a;
+}
+
+#termekek {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin: auto;
+
+}
+
+.kepek {
+    height: 600px;
+    width: 900px;
+}
+
+table,
+th,
+td,
+tr {
+    border: 2px black solid;
+    background-color: antiquewhite;
+}
+
+td {
+    padding-top: 1.5em;
+    padding: 2em;
+    ;
+}
+
+td.termek {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+span {
+    font-style: oblique;
+    color: #e2e43b;
+}
+
+.contacts {
+    box-shadow: 7px 7px;
+    height: 300px;
+    width: 350px;
+    border: 1px solid;
+    background-color: #ffff4d;
+}
+
+.color {
+    color: white;
+}
+
+a :hover {
+    background-color: #dea318;
+}
+
+#verticalSpace {
+    margin-bottom: 100px;
+}
+
+#rolunk {
+    color: #dea318;
+    font-size: 30pt;
+}
+
+#prices {
+    color: #dea318;
+    font-size: 30pt;
+    text-align: justify;
+    background-color: #2a2f32;
+
+}
+
+#gyik {
+    color: #dea318;
+    font-size: 30pt;
+    background-color: #2a2f32;
+}
+
+h1 {
+    padding: 15px;
+}
+
+#mainszoveg {
+    font-size: 20pt;
+}
+
+.contacts {
+    box-shadow: 7px 7px black;
+    height: 300px;
+    width: 350px;
+    border: 1px solid black;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+
+#contactDoboz {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#kapcsolatok {
+    color: #dea318;
+    font-size: 30pt;
+}
+
+#slider {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 1000px;
+    width: 100%;
+}
+
+.kepek {
+    height: 100%;
+    width: 100%;
+}
+
+#center {
+    text-align: center;
+}
+
+#kerekparok {
+    background-color: #2a2a2a;
+    color: #dea318;
+    padding: 25px;
+}
+
+.kozepre {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigSpace {
+    margin-bottom: 100px;
+    background-color: #2a2f32;
+    height: 100px;
+}
+
+#footer {
+    position: relative;
+}
+
+#form {
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.kartyaImage {
+    width: 287px;
+    height: 200px;
+}
+
+.result {
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+.width {
+    width: 18rem;
+}
+
+/* Külsős kódok: */
+nav {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2a2f32;
+}
+
+nav::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav a {
+    font-family: 'Carter One', cursive;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 157px;
+}
+
+nav a:hover {
+    background-color: #dea318;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav .has-submenu {
+    position: relative;
+}
+
+nav .has-submenu:hover .submenu {
+    display: block;
+}
+
+nav .submenu {
+    position: absolute;
+    width: 300px;
+    display: none;
+}
+
+nav .submenu a {
+    background-color: #dea318;
+}
+
+nav .submenu a:hover {
+    background-color: #dea318;
+}
+
+/* rólunk rész(külsős)*/
+.quality {
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 350px;
+}
+
+.quality .quality_box {
+    padding: 15px;
+}
+
+.quality .quality_box figure {
+    margin: 0;
+}
+
+.quality .quality_box figure img {
+    width: 100%;
+}
+
+.quality .quality_box::before {
+    position: absolute;
+    content: "";
+    left: 15px;
+    border-top: 20px;
+    height: 20px;
+    background: #dea318;
+    width: 77%;
+    top: -5px;
+}
+
+.quality .quality_box::after {
+    position: absolute;
+    content: "";
+    left: 10px;
+    height: 80%;
+    background: #dea318;
+    width: 20px;
+    top: -5px;
+}
+
+
+
+.quality_text {
+    text-align: center;
+    background: #ddd;
+    padding: 20px;
+    margin-left: -102px;
+    margin-right: 50px;
+}
+
+.quality_text h3 {
+    color: #dea318;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.quality_text p {
+    color: #dea318;
+    font-size: 16pt;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: #dea318;
+    transform: rotateY(180deg);
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}

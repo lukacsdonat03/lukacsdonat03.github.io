@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kerékpár kölcsönző</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=IBM+Plex+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+    <!--JQuery a dropdown-hoz-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/code.js"></script>
+</head>
+<body>
+    <!--BS-es NAVBAR-->
+    <div class="navigacio">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#mainPage">Főoldal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#prices">Áraink <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#rolunk">Rólunk</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Termékeink:
+                  </a>
+                  <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item color" href="bringak.html">Kerékpárok</a>
+                    <a class="dropdown-item color" href="rollerek.html">Rollerek</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#gyik" tabindex="-1" >GYIK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#kapcsolatok" tabindex="-1" >Kapcsolatok</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <!--MAIN-->
+    <main>
+        <!--SLIDER-->
+        <section class="sliderresz">
+            <div id="slider">
+                <div id="carouselExampleSlidesOnly" class="carousel slide kepek" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="Images/slider1.jpg" class="d-block w-100 kepek" alt="Túrázók">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/slider2.jpg" class="d-block w-100" alt="Túrázók">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/slider3.jpg" class="d-block w-100" alt="Túrázók">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/slider4.jpg" class="d-block w-100" alt="Túrázók">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/slider6.jpg" class="d-block w-100" alt="Túrázók">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/slider7.jpg" class="d-block w-100" alt="Túrázók">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+         <!--FŐOLDAL-->
+        <section id="main">
+            
+        </section>        
+         <!--ÁRAK-->
+         <section id="prices">
+            <div class="container pt-5">
+                <div class="row py-5">
+                    <div class="col-12 pb-0 pt-5">
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-center text-md-left">
+                                <h1 class="color-black font-gotham-light m-0 pt-4">Áraink:</h1>
+                            </div>
+                            <div class="col-12 col-md-9 text-center text-md-left ">
+                                <div class="row  pt-4">
+                                    <div class="col-12 col-md-8">
+                                        <div class="basic-text">
+                                            <p id="mainszoveg" class="font-gotham-book">Áraink rendkívül kedvezőek.Alapvetően minden kerékpárnak megvan a saját bérleti ára órára levetítve,azonban vannak kedvezményeink.Ha több kerékpárt kíván kölcsönözni az kerékpáronként 3% kedvezményt jelent.Sőt, továbbá ha több napra kívánja kibérelni az adott kerékpárt az naponként 2%-ot jelent.A kedvezményeket 3 napos bérlésig lehet összevonni, utánna kölün válik.</p>
+                                        </div>                                       
+                                    </div>                                 
+                                </div>           
+                            </div>
+                        </div>       
+                    </div>                
+                </div>
+            </div>    
+        </section>
+         <!--Rólunk(külsős)-->
+        <section id="rolunk">
+            <div class="quality ">
+                <div class="container">
+                   <div class="row d_flex">
+                      <div class="col-md-8">
+                         <div class="quality_box">
+                            <figure><img src="Images/qt.jpg" alt="#"/></figure>
+                         </div>
+                      </div>
+                       <div class="col-md-4">
+                         <div class="quality_text">
+                           <h3>Rólunk</h3>
+                            <p>A cégünk kerékpár, illetve már elektromos roller bérlésévek foglalkozik alapvetően. A cég ,mint olyan 2021 óta van jelen és több tucat jó értékelést kapott az interneten.
+
+                                Cégünk számára fontos, hogy a vásárlók elégedettek legyenek a termékkel, éppen ezért termékeink remek állapotban vannk és rendszeres karbantaráson esnek át.
+                                
+                                Kedvező áraink miatt a Bringa Kölcsönző lehet Önnek is a legjobb választás.A cég vezetői Lukács Donát és Nagy Vencel.</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+        </section>
+
+         <!--GYIK-->
+        <section id="gyik">
+            <div class="container pt-5">
+                <div class="row py-5">
+                    <div class="col-12 pb-0 pt-5">
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-center text-md-left">
+                                <h1 class="color-black font-gotham-light m-0 pt-4">Gyakran ismételt kérdések</h1>
+                            </div>
+                            <div class="col-12 col-md-9 text-center text-md-left ">
+                                <div class="row  pt-4">
+                                    <div class="col-12 col-md-8">
+                                        <div class="basic-text">
+                                            <p id="mainszoveg" class="font-gotham-book">Mit is lehet bérelni? <br> Cégünkél lehet bérelni különféle kerékpárokat és mostmár elektromos rollerreket is.Mindezt kedvező áron teheti meg ha cégünket választja.</p>
+                                        </div>
+                                        <div>
+                                            <div class="bullet h-100">
+                                                <span class="custom-small-bullet"></span>
+                                            </div>
+                                            <div class="bullet-content">
+                                                <p id="mainszoveg" class="font-gotham-book">Miért Válassza cégünket? <br> Cégünk légkörre rendkívül barátságos, a személyzet közvetlen.Áraink barátiak, ebben a bizniszben szinte első.Emellett még egy egyéni vállalkozást támogatsz, ha nálunk bérelsz és ezzel elősegítve a jobb minőséget a későbbiekben.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bullet h-100">
+                                                <span class="custom-small-bullet"></span>
+                                            </div>
+                                            <div class="bullet-content">
+                                                <p  id="mainszoveg" class="font-gotham-book">Milyen iratok szükségesek egy kölcsönzés során? <br> A kölcsönzéshez csak egy szemályi igazolványt kell magaddal hozz.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bullet h-100">
+                                                <span class="custom-small-bullet"></span>
+                                            </div>
+                                            <div class="bullet-content">
+                                                <p  id="mainszoveg" class="font-gotham-book">Milyen fizetési módok lehetségesek? <br> Cégünkél lehetőség van kézpénzzel vagy bankkártyával fizetni egyaránt.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bullet h-100">
+                                                <span class="custom-small-bullet"></span>
+                                            </div>
+                                            <div class="bullet-content">
+                                                <p  id="mainszoveg" class="font-gotham-book">Mikor tart nyitva a kölcsönző? <br> A kölcsönző Hétfőtől Szombatig 8.00-18.00-ig tart nyitva.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>           
+                            </div>
+                        </div>       
+                    </div>                
+                </div>
+            </div>    
+        </section>
+         <!--Kapcsolatok-->
+        <section id="kapcsolatok">
+            <div id="contactDoboz">
+                <h1>Kapcsolatok</h1>
+
+                <div class="contacts">
+                    <h3>Lukács Donát - társtulajdonos</h3>
+                    <br>
+                    <h5>
+                        Tel:06 20 599 1212
+                        <br>
+                        Email:lukacsdonat@gmail.com
+                    </h5>
+                </div>
+                <div class="contacts">
+                    <h3>Nagy Vencel - társtulajdonos</h3>
+                    <br>
+                    <h5>
+                        Tel:06 30 697 0000
+                        <br>
+                        Email:nagyvencel@gmail.com
+                </div>
+                <div class="contacts">
+                    <h3>Bringa kölcsönző</h3>
+                    <br>
+                    <h5>
+                        Tel:06 20 552 6666
+                        <br>
+                        Email:bringakolcsonzo@gmail.com
+                </div>
+            </div>
+        </section>
+        <div id="verticalSpace"></div>           
+    </main>
+    
+    <!--FOOTER-->
+    <footer>
+        <p>Copyright © 2021 Bringa kölcsönző </p> 
+        <p>Készítette: Lukács Donát - Nagy Vencel</p>
+    </footer>
+</body>
+</html>

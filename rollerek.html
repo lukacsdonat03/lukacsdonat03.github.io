@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kerékpár kölcsönző</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=IBM+Plex+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+    <!--JQuery a dropdown-hoz-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/code.js"></script>
+</head>
+    <body>
+         <!--NAV Bar-->
+         <div class="navigacio ">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="index.html">Főoldal</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="bringak.html">Kerékpárjaink <span class="sr-only"></span></a>
+                  </li>               
+                </ul>
+              </div>
+            </nav>
+      </div>
+        <!--Main-->
+        <main>
+          <section id="kerekparok">
+            <div class="container">
+              <div id="verticalSpace" class="row">
+                <div class="col-6 kozepre flip-card">
+                  <div class="card flip-card-inner" style="width: 18rem;">
+                    <div class="flip-card-front">
+                      <img src="Images/Bluetouch_btx250.jpg" class="card-img-top kartyaImage" alt="...">
+                    </div>
+                      <div class="card-body flip-card-back">
+                        <p class="card-text"><h5> Bluetouch BTX250 <br>1200ft/óra</h5></p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-6 kozepre flip-card">
+                    <div class="card flip-card-inner" style="width: 18rem;">
+                      <div class="flip-card-front">
+                        <img src="Images/BlueWay_R10.jpg" class="card-img-top kartyaImage" alt="...">
+                      </div>
+                        <div class="card-body flip-card-back">
+                          <p class="card-text"><h5> BlueWay R10 <br>3000ft/óra</h5></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row ">
+                <div class="col-6 kozepre flip-card">
+                  <div class="card flip-card-inner" style="width: 18rem;">
+                    <div class="flip-card-front">
+                      <img src="Images/nitro_scooter.jpg" class="card-img-top kartyaImage" alt="...">
+                    </div>
+                      <div class="card-body flip-card-back">
+                        <p class="card-text"><h5> Nitro Scooter <br>1300ft/óra</h5></p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-6 kozepre flip-card">
+                    <div class="card flip-card-inner" style="width: 18rem;">
+                      <div class="flip-card-front">
+                        <img src="Images/sparco.jpg" class="card-img-top kartyaImage" alt="...">
+                      </div>
+                        <div class="card-body flip-card-back">
+                          <p class="card-text"><h5> Sparco <br>1050ft/óra</h5></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </section>
+          <section id="rollerUrlap">
+            <div id="form">
+                <form>
+                    <div class="row">
+                      <div class="col">
+                        <input  id="rollerVezetek" type="text" class="form-control" placeholder="Vezetéknév">
+                      </div>
+                      <div class="col">
+                        <input id="rollerKereszt" type="text" class="form-control" placeholder="Keresztnév">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Tel:</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                        <select id="rollerek" class="form-control">
+                          <option id="btx250">Bluetouch BTX250</option>
+                          <option id="blueway">BlueWay R10</option>
+                          <option id="nitro">Nitro Scooter</option>
+                          <option id="sparco">Sparco</option>
+                        </select>
+                        <br>
+                        <label class="col-sm-2 col-form-label">Óra</label><input id="rollerIdo" type="number">
+                        <br>
+                        <button type="button" id="rollerFoglal" class="btn btn-warning">Foglal</button>
+                        <br>
+                        <h5><span id="resultRoller" class="result"></span></h5>
+                  </form>
+            </div>
+          </section>
+          <div id="verticalSpace" class="container">
+            <div style="background-color: #2a2a2a;" class="col-12"></div>
+          </div> 
+        </main>
+      
+        <!--FOOTER-->
+    <footer id="footer">
+        <p>Copyright © 2021 Bringa kölcsönző </p> 
+        <p>Készítette: Lukács Donát - Nagy Vencel</p>
+    </footer>
+    </body>
+</html>
